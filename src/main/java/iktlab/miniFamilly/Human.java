@@ -9,6 +9,9 @@ public class Human {
     private String pet;
     private String mother;
     private String father;
+    private String [][]  schedule;
+
+
 
     public Human(String name, String surname, int age, int iq, String pet) {
         this.name = name;

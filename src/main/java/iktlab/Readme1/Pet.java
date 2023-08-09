@@ -1,6 +1,9 @@
-package iktlab.miniFamilly;
+package iktlab.Readme1;
+
+import java.util.Objects;
 
 public class Pet {
+
     private String species;
     private String nickName;
     private int age;
@@ -28,6 +31,25 @@ public class Pet {
 
     }
 
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Pet)) return false;
+        Pet pet = (Pet) o;
+        return age == pet.age && trickLevel == pet.trickLevel && Objects.equals(species, pet.species) && Objects.equals(nickName, pet.nickName) && Objects.equals(habits, pet.habits);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(species, nickName, age, trickLevel, habits);
+    }
+
     @Override
     public String toString() {
         return "Pet{" +
@@ -39,5 +61,3 @@ public class Pet {
                 '}';
     }
 }
-
-

@@ -1,4 +1,7 @@
+/*
 package iktlab.Youtube;
+
+import java.util.Arrays;
 
 public class Exercise {
     public static void main(String[] args) {
@@ -23,5 +26,8 @@ public class Exercise {
         System.out.println("sum =" + sum);
         System.out.println("ortalama = " + ortalama);
 
+        Arrays
+
     }
 }
+*/

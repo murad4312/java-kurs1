@@ -1,7 +1,5 @@
 package iktlab.miniFamilly;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Human man = new Human("Micheal", "Hoodman", 1980, 92, "Rock");
